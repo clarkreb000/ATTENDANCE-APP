@@ -1,20 +1,44 @@
+*{margin: 0; padding:0}
+
 body{
-    background-image: url("road.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+background-color: #f5683d;
+padding-top: 10vh;
+
 }
-.loginbox{
-width: 320px;
-height: 420px;
-background: #000;
-color: #fff;
-top: 50%
-left: 50%
-position: absolute;
-transform: translate(-50%, -50%);
-box-sizing: boarder-box;
+.form-container{
+width: 250px;
+height: auto;
+padding: 20px 30px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px 0 #000;
+margin: auto;
+}
+.user-img{
+background:url('defaultavatar') no-repeat;
+width:50px;
+height:50px;
+background-size: 100%
+}
+ul.list{
+list-style-type: none;
+text-align: center;
+}
+ul.list li{
+width: 250px;
+margin-bottom: 15px;
 }
 
-.avatar{
+ul.list li input{
+width: 250px;
+text-align:center;
+padding: 8px 0px;
+border:none;
+background-color: #d3d3d3;
+border-radius: 5px;
+}
+
+ul.list li input[type="button"]{
+background-color: #4690fb;
+color: #fff;
 }
