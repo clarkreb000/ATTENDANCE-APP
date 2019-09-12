@@ -1,12 +1,20 @@
 *{margin: 0; padding:0}
 
 body{
-background-color: #f5683d;
+background-color:#008B8B;
 padding-top: 10vh;
-
 }
 .form-container{
 width: 250px;
+height: auto;
+padding: 20px 30px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px 0 #000;
+margin: auto;
+}
+.form-container-teacher{
+width: 900px;
 height: auto;
 padding: 20px 30px;
 background-color: #fff;
@@ -22,7 +30,6 @@ ul.list li{
 width: 250px;
 margin-bottom: 15px;
 }
-
 ul.list li input{
 width: 250px;
 text-align:center;
@@ -31,7 +38,14 @@ border:none;
 background-color: #d3d3d3;
 border-radius: 5px;
 }
-ul.list li input[type="button"]{
-background-color:#4690fb;
-color:#fff;
-}
+
+.button1{
+	background-color: #808080;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+ }
