@@ -1,0 +1,67 @@
+*{margin: 0; padding:0}
+
+body{
+background-color: #FFE4E1;
+padding-top: 10vh;
+}
+.form-container-teacher{
+width: 900px;
+height: auto;
+padding: 20px 30px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px 0 #000;
+margin: auto;
+}
+.form-container-selection{
+width: 200px;
+height: auto;
+padding: 20px 30px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px 0 #000;
+margin-left: 10px;
+}
+.welcome{
+width: 250px;
+height: auto;
+padding: 20px 30px;
+background-color: #d9e6f2;
+border-radius: 10px;
+box-shadow: 0 0 10px 0 #000;
+margin: auto;
+}
+ul.welcomescreen{
+text-align:center;
+}
+ul.list{
+list-style-type: none;
+text-align: left;
+}
+ul.list li{
+width: 250px;
+margin-bottom: 15px;
+}
+.myButton {
+	background-color:#b6e1fc;
+	-moz-border-radius:30px;
+	-webkit-border-radius:20px;
+	border-radius:28px;
+	border:1px solid #021f31;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#054d7a;
+	color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

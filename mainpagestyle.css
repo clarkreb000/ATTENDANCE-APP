@@ -13,15 +13,6 @@ border-radius: 10px;
 box-shadow: 0 0 10px 0 #000;
 margin: auto;
 }
-.form-container-teacher{
-width: 900px;
-height: auto;
-padding: 20px 30px;
-background-color: #fff;
-border-radius: 10px;
-box-shadow: 0 0 10px 0 #000;
-margin: auto;
-}
 ul.list{
 list-style-type: none;
 text-align: center;
@@ -29,14 +20,6 @@ text-align: center;
 ul.list li{
 width: 250px;
 margin-bottom: 15px;
-}
-ul.list li input{
-width: 250px;
-text-align:center;
-padding: 8px 0px;
-border:none;
-background-color: #d3d3d3;
-border-radius: 5px;
 }
 
 .button1{
