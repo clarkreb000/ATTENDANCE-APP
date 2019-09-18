@@ -1,0 +1,20 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAXNvwa4gno5IPCY4w0WiG14kssmzodzQ0",
+    authDomain: "attendance-app-4f705.firebaseapp.com",
+    databaseURL: "https://attendance-app-4f705.firebaseio.com",
+    projectId: "attendance-app-4f705",
+    storageBucket: "attendance-app-4f705.appspot.com",
+    messagingSenderId: "426521114058",
+    appId: "1:426521114058:web:982ba60fa5754c51964b33"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
