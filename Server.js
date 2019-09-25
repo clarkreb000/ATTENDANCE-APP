@@ -1,23 +1,28 @@
 let http = require('http');
 let fs = require('fs');
 let path = require('path');
+let url = require('url');
+
 
 http.createServer(function (req, res) {
     let fileStream;
-    if(req.url === "/"){
-        fs.readFile("./MAIN.html", "UTF-8", function(err, html){
+    let file = req.url;
+    let q = url.parse(req.url, true);
+    let filename = "." + q.pathname;
+    if(file.match("/")){
+        fs.readFile(filename, "UTF-8", function(err, html){
             res.writeHead(200, {"Content-Type": "text/html"});
-            res.end(html);
+            res.end();
         });
     }
-    else if(req.url.match("\.css$")){
-        let cssPath = path.join(__dirname, req.url);
+    else if(file.match("\.css$")){
+        let cssPath = path.join(__dirname, file);
         fileStream = fs.createReadStream(cssPath, "UTF-8");
         res.writeHead(200, {"Content-Type": "text/css"});
         fileStream.pipe(res);
     }
-    else if(req.url.match("\.png$")){
-        let imagePath = path.join(__dirname, req.url);
+    else if(file.match("\.png$")){
+        let imagePath = path.join(__dirname, file);
         fileStream = fs.createReadStream(imagePath);
         res.writeHead(200, {"Content-Type": "image/png"});
         fileStream.pipe(res);
@@ -33,4 +38,4 @@ http.createServer(function (req, res) {
 //     res.end('Hello World!');
 // }).listen(8081);
 
-console.log('Server running at http://127.0.0.1:8081/');
+console.log('Server running at http://localhost:8081/');
