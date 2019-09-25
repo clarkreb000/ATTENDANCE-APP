@@ -13,3 +13,53 @@ border-radius: 10px;
 box-shadow: 0 0 10px 0 #000;
 margin: auto;
 }
+.form-container-selection{
+width: 200px;
+height: auto;
+padding: 30px 15px;
+background-color: #f2f2f2;
+border-radius: 10px;
+box-shadow: 0 0 10px 0 #000;
+}
+.welcome{
+width: 250px;
+height: auto;
+padding: 20px 30px;
+background-color: #d9e6f2;
+border-radius: 5px;
+box-shadow: 0 0 5px 0 #000;
+margin: auto;
+}
+ul.welcomescreen{
+text-align:center;
+}
+ul.list{
+list-style-type: none;
+text-align: left;
+}
+ul.list li{
+width: 250px;
+margin-bottom: 15px;
+}
+.myButton {
+	background-color:#b6e1fc;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:28px;
+	border:1px solid #021f31;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#054d7a;
+	color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
