@@ -16,6 +16,3 @@ var firebaseConfig = {
     messagingSenderId: "426521114058",
     appId: "1:426521114058:web:982ba60fa5754c51964b33"
 };
-// Initialize the default app
-var admin = require('firebase-admin');
-var app = admin.initializeApp();
