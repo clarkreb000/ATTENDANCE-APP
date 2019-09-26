@@ -14,21 +14,21 @@ http.createServer(function (req, res) {
         });
     }
     else if(file === "/Teacher.html"){
-        fs.readFile("Teacher.html", "UTF-8", function(err, html){
+        fs.readFile("/Teacher/Teacher.html", "UTF-8", function(err, html){
             res.writeHead(200, {"Content-Type": "text/html"});
             res.write(html);
             res.end();
         });
     }
     else if(file === "/Student.html"){
-        fs.readFile("Student.html", "UTF-8", function(err, html){
+        fs.readFile("/Student/Student.html", "UTF-8", function(err, html){
             res.writeHead(200, {"Content-Type": "text/html"});
             res.write(html);
             res.end();
         });
     }
     else if(file === "/Parent.html"){
-        fs.readFile("Parent.html", "UTF-8", function(err, html){
+        fs.readFile("Parent/Parent.html", "UTF-8", function(err, html){
             res.writeHead(200, {"Content-Type": "text/html"});
             res.write(html);
             res.end();
