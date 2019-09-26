@@ -1,20 +1,38 @@
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
+Firebase fb = new Firebase(URL);
+Firebase msgRef = fb.child("finished");
+HashMap<String, Message> msgList = new HashMap<>();
+Message msg = new Message(m, n);
+msgList.put(HASHKEY, msg);
+msgRef.push().setValue(msgList);
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAXNvwa4gno5IPCY4w0WiG14kssmzodzQ0",
-    authDomain: "attendance-app-4f705.firebaseapp.com",
-    databaseURL: "https://attendance-app-4f705.firebaseio.com",
-    projectId: "attendance-app-4f705",
-    storageBucket: "attendance-app-4f705.appspot.com",
-    messagingSenderId: "426521114058",
-    appId: "1:426521114058:web:982ba60fa5754c51964b33"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+ref = new Firebase("https://my.firebaseio.com/messages").limitToLast(10);
+ref.addValueEventListener(new ValueEventListener() {
+    @Override
+    public void onDataChange(DataSnapshot dataSnapshot) {
+        for (DataSnapshot messageSnapshot: dataSnapshot.getChildren()) {
+            String name = (String) messageSnapshot.child("name").getValue();
+            String message = (String) messageSnapshot.child("message").getValue();
+        }
+    }
+
+    @Override
+    public void onCancelled(FirebaseError firebaseError) { }
+});
+var provider = new firebase.auth.GoogleAuthProvider();
+firebase.auth().signInWithPopup(provider).then(function(result) {
+  // This gives you a Google Access Token. You can use it to access the Google API.
+  var token = result.credential.accessToken;
+  // The signed-in user info.
+  var user = result.user;
+  // ...
+}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // The email of the user's account used.
+  var email = error.email;
+  // The firebase.auth.AuthCredential type that was used.
+  var credential = error.credential;
+  // ...
+});
