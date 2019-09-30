@@ -14,5 +14,33 @@
     <li><a href="Student/Student.html" class="button1">Student</a></li>
 </ul>
 </div>
+
+<applet>
+    using Firebase;
+    using Firebase.Database;
+    using Firebase.Unity.Editor;
+
+    public class MyScript: MonoBehaviour {
+    void Start() {
+    // Set up the Editor before calling into the realtime database.
+    FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://attendance-app-4f705.firebaseio.com/");
+
+    // Get the root reference location of the database.
+    DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
+    }
+    }
+    FirebaseDatabase.DefaultInstance
+    .GetReference("Leaders")
+    .GetValueAsync().ContinueWith(task => {
+    if (task.IsFaulted) {
+    // Handle the error...
+
+    }
+    else if (task.IsCompleted) {
+    DataSnapshot snapshot = task.Result;
+    // Do something with snapshot...
+    }
+    });
+</applet>
 </body>
 </html>
