@@ -1,46 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="mainpagestyle.css">
+    <title>Javascript Login Form Validation</title>
+    <!-- Include CSS File Here -->
+    <link rel="stylesheet" href="yes.css"/>
+    <!-- Include JS File Here -->
+    <script src="login.js" type="text/javascript" ></script>
 </head>
 <body>
-<div class="form-container">
-<ul class="list">
-    <li><h2>I am a...</h2></li>
-    <li><a href="Teacher/Teacher.html" class="button1">Teacher</a></li>
-    <li><a href="Parent/Parent.html" class="button1">Parent</a></li>
-    <li><a href="Student/Student.html" class="button1">Student</a></li>
-</ul>
+<div class="container">
+    <div class="main">
+        <h2>Javascript Login Form Validation</h2>
+        <form id="form_id" method="post" name="myform">
+            <label>User Name :</label>
+            <input type="text" name="username" id="username"/>
+            <label>Password :</label>
+            <input type="password" name="password" id="password"/>
+            <input type="button" value="Login" id="submit" onclick="validate()"/>
+        </form>
+        <span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : Formget<br/>Password : formget#123</b></span>
+    </div>
 </div>
-
-<applet>
-    using Firebase;
-    using Firebase.Database;
-    using Firebase.Unity.Editor;
-
-    public class MyScript: MonoBehaviour {
-    void Start() {
-    // Set up the Editor before calling into the realtime database.
-    FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://attendance-app-4f705.firebaseio.com/");
-
-    // Get the root reference location of the database.
-    DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
-    }
-    }
-    FirebaseDatabase.DefaultInstance
-    .GetReference("Leaders")
-    .GetValueAsync().ContinueWith(task => {
-    if (task.IsFaulted) {
-    // Handle the error...
-
-    }
-    else if (task.IsCompleted) {
-    DataSnapshot snapshot = task.Result;
-    // Do something with snapshot...
-    }
-    });
-</applet>
 </body>
 </html>
