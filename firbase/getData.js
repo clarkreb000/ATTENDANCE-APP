@@ -1,5 +1,4 @@
 var admin = require('firebase-admin');
-
 var serviceAccount = require('./serviceAccountKey.json'); // Get refresh token from OAuth2 flow
 
 admin.initializeApp({
@@ -8,20 +7,23 @@ admin.initializeApp({
 });
 
 // Get a database reference to our blog
-var db = admin.database();
-var ref = db.ref("server/saving-data/fireblog");
+let db = admin.firestore();
+let docRef = db.collection('users');
 
-var usersRef = ref.child("users");
-usersRef.set({
-    alanisawesome: {
-        date_of_birth: "June 23, 1912",
-        full_name: "Alan Turing"
-    },
-    gracehop: {
-        date_of_birth: "December 9, 1906",
-        full_name: "Grace Hopper"
-    }
-});
+function setData (username, age, dob, name) {
+    docRef.doc(name).set({
+        username: username,
+        age: age,
+        doc: dob
+    });
+}
+
+for(let i = 0; i < 5; i++){
+    setData(i, i+i, i^3, "studentf" + i);
+}
+
+docRef.get();
+
 
 var firebaseConfig = {
     apiKey: "AIzaSyAXNvwa4gno5IPCY4w0WiG14kssmzodzQ0",
