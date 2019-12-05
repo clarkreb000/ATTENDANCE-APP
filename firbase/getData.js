@@ -22,8 +22,6 @@ for(let i = 0; i < 5; i++){
     setData(i, i+i, i^3, "studentf" + i);
 }
 
-docRef.get();
-
 
 var firebaseConfig = {
     apiKey: "AIzaSyAXNvwa4gno5IPCY4w0WiG14kssmzodzQ0",

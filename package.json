@@ -2,7 +2,14 @@
   "name": "ATTENDANCE-APP",
   "version": "1.0.0",
   "dependencies": {
+    "beefy": "^2.1.8",
+    "browserify": "^16.5.0",
     "express": "^4.17.1",
+    "firebase": "^7.5.0",
     "firebase-admin": "latest"
+  },
+  "scripts": {
+    "start": "beefy app.js:bundle.js --live",
+    "bundle": "p"
   }
 }

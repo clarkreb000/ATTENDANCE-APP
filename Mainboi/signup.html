@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="no.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <h2>Sign Up</h2>
+        <form id="login_id" method="post" name="login">
+
+            <label>User Name:</label>
+            <input type="text" name="username" id="username"/>
+            <label>Password:</label>
+            <input type="password" name="password" id="password"/>
+            <label>Name:</label>
+            <input type="text" name="name" id="name"/>
+            <input type="button" value="Sign Up" id="submit" onclick="addition()"/>
+        </form>
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAXNvwa4gno5IPCY4w0WiG14kssmzodzQ0",
+        authDomain: "attendance-app-4f705.firebaseapp.com",
+        databaseURL: "https://attendance-app-4f705.firebaseio.com",
+        projectId: "attendance-app-4f705",
+        storageBucket: "attendance-app-4f705.appspot.com",
+        messagingSenderId: "426521114058",
+        appId: "1:426521114058:web:ab69f21cc54864b7964b33",
+        measurementId: "G-XPEYCKM4EC"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+<script>
+    function addition(){
+        alert("Yikes");
+        var username1 = document.getElementById("username").value;
+        var name1 = document.getElementById("name").value;
+        var password1 = document.getElementById("password").value;
+
+        // Get a database reference to our blog
+        const firebase = require("firebase");
+        require("firebase/firestore");
+
+        let docRef = firebase.firestore().collection('users');
+        docRef.doc(username1).set({
+            name: name1,
+            password: password1,
+        });
+        alert("Yikes");
+        return false;
+    }
+</script>
+</body>
+</html>
