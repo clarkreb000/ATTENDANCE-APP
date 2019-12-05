@@ -18,7 +18,7 @@ function validate(){
     var db = firebase.firestore();
 
     let docRef = db.collection('users');
-    docRef.doc(username1).value).add({
+    docRef.doc(username1).value.add({
         name: name1,
         password: password1,
     }).then(function(docRef) {
