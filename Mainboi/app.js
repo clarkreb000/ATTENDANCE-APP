@@ -1,6 +1,7 @@
 let http = require('http');
 let fs = require('fs');
 var url = require('url');
+var port = process.env.port || 80;
 
 http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
@@ -14,6 +15,6 @@ http.createServer(function (req, res) {
         res.write(data);
         return res.end();
     });
-}).listen(8080);
+}).listen(port);
 
 console.log('Server running at http://localhost:8080/Mainboi/MAIN.html');
