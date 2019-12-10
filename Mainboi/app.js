@@ -3,7 +3,7 @@ let fs = require('fs');
 var url = require('url');
 const dotenv = require('dotenv');
 dotenv.config();
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 
 http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
