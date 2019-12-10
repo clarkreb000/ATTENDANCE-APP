@@ -2,15 +2,25 @@
   "name": "ATTENDANCE-APP",
   "version": "1.0.0",
   "dependencies": {
-    "beefy": "^2.1.8",
-    "browserify": "^16.5.0",
     "express": "^4.17.1",
     "firebase": "^7.5.0",
     "firebase-admin": "latest",
     "git": "^0.1.5"
   },
-  "scripts": {
-    "start": "beefy app.js:bundle.js --live",
-    "bundle": "p"
-  }
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkreb000/ATTENDANCE-APP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarkreb000/ATTENDANCE-APP/issues"
+  },
+  "homepage": "https://github.com/clarkreb000/ATTENDANCE-APP#readme"
 }

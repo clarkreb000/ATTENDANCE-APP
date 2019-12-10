@@ -1,7 +1,9 @@
 let http = require('http');
 let fs = require('fs');
 var url = require('url');
-var port = process.env.PORT ||80;
+const dotenv = require('dotenv');
+dotenv.config();
+var port = process.env.PORT || 80;
 
 http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
@@ -18,3 +20,5 @@ http.createServer(function (req, res) {
 }).listen(port);
 
 console.log('Server running at http://localhost:8080/Mainboi/MAIN.html');
+console.log('Your port is ' + port);
+console.log(process.env.PORT);
