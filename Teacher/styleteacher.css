@@ -6,7 +6,7 @@ padding-top: 10vh;
 }
 .form-container-teacher{
 width: 1200px;
-height: auto;
+height: 500px;
 padding: 20px 30px;
 background-color: #fff;
 border-radius: 10px;
@@ -16,11 +16,14 @@ margin: auto;
 .form-container-selection{
 width: 200px;
 height: auto;
-padding: 30px 15px;
+padding: 20px 15px;
 background-color: #f2f2f2;
 border-radius: 10px;
 box-shadow: 0 0 10px 0 #000;
 }
+.picture-format{
+ float:right;
+ }
 .welcome{
 width: 250px;
 height: auto;
@@ -33,6 +36,7 @@ margin: auto;
 ul.welcomescreen{
 text-align:center;
 }
+
 ul.list{
 list-style-type: none;
 text-align: left;
