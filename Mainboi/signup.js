@@ -1,4 +1,5 @@
 function validate(){
+    alert ("START");
     var username1 = document.getElementById("username").value;
     var name1 = document.getElementById("name").value;
     var password1 = document.getElementById("password").value;
@@ -26,7 +27,7 @@ function validate(){
     }).catch(function(error) {
         console.error("Error adding document: ", error);
     });
-    alert ("You are fricking heterosexually insecure");
-    window.location = "MAIN.html"; // Redirecting to other page.
+    alert ("FINISH");
+    window.location = "index.html"; // Redirecting to other page.
     return false;
 }
