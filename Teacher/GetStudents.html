@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>ATTENDANCE</title>
-    <link rel="stylesheet" type="text/css" href="****************">
+    <script src="getData.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="getstudents.css">
+ <style>
+#students {
+  border-collapse: collapse;
+  width: 100%;
+}
+#students td, #students th {
+  border: 2px solid #ddd;
+  padding: 8px;
+}
+#students tr:nth-child(odd){background-color: #f2f2f2;}
+#students tr:nth-child(even){background-color: #e8e8e8;}
+#students tr:hover {background-color: #ddd;}
+#students th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #b6e1fc;
+  color: black;
+}
+</style>
 </head>
 <body>
+<div class="welcome">
+    <ul class="welcomescreen">
+        <h1>All Students</h1>
+    </ul>
+</div>
+<table id="students">
+    <tr>
+        <th>Student Name</th>
+        <th>Parent Contact</th>
+        <th>Total Time at Club</th>
+        <th>Clock in Time</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>317-ur-mom</td>
+        <td>42 hours</td>
+        <td><div contenteditable="true">2:45</div></td>
+    </tr>
+    <tr>
+        <td>Berglunds snabbköp</td>
+        <td>gogleyeyes@gmail.com</td>
+        <td>10 minutes</td>
+        <td><div contenteditable="true">2:45</div></td>
+    </tr>
+    <tr>
+        <td>Berglunds snabbköp</td>
+        <td>gogleyeyes@gmail.com</td>
+        <td>10 minutes</td>
+        <td><div contenteditable="true">2:45</div></td>
+    </tr>
+    <tr>
+        <td>Berglunds snabbköp</td>
+        <td>gogleyeyes@gmail.com</td>
+        <td>10 minutes</td>
+        <td><div contenteditable="true">2:45</div></td>
+    </tr>
+</table>
 
 </body>
 </html>
