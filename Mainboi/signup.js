@@ -28,6 +28,6 @@ function validate(){
         console.error("Error adding document: ", error);
     });
     alert ("FINISH");
-    window.location = "index.html"; // Redirecting to other page.
+    window.location = "index1.html"; // Redirecting to other page.
     return false;
 }

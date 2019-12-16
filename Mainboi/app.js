@@ -19,6 +19,6 @@ http.createServer(function (req, res) {
     });
 }).listen(port);
 
-console.log('Server running at http://localhost:8080/Mainboi/MAIN.html');
+console.log('Server running at http://localhost:8080/index.html');
 console.log('Your port is ' + port);
 console.log(process.env.PORT);
