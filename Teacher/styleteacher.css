@@ -5,13 +5,13 @@ background-color: #FFE4E1;
 padding-top: 10vh;
 }
 .form-container-teacher{
+margin: auto;
 width: 1200px;
 height: 500px;
 padding: 20px 30px;
 background-color: #fff;
 border-radius: 10px;
 box-shadow: 0 0 10px 0 #000;
-margin: auto;
 }
 .form-container-selection{
 width: 200px;
@@ -29,13 +29,13 @@ box-shadow: 0 0 10px 0 #000;
  border-radius: 10%;
  }
 .welcome{
+margin: auto;
 width: 250px;
 height: auto;
 padding: 20px 30px;
 background-color: #d9e6f2;
 border-radius: 5px;
 box-shadow: 0 0 5px 0 #000;
-margin: auto;
 }
 ul.welcomescreen{
 text-align:center;
