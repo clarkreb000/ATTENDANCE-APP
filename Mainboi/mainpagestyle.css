@@ -1,11 +1,15 @@
 *{margin: 0; padding:0}
 
 body{
-background-color:#e7f5fe;
+background-color:#DCDCDC;
 padding-top: 10vh;
+}
+h3{
+color: #ffe44d;
 }
 h4{
 padding-left: 20px;
+
 }
 h6{
 padding-left: 30px;
@@ -31,7 +35,7 @@ text-align: center;
 padding-top: 20px;
 width: auto;
 height: 115px;
-background-color:#595959
+background-color:#595959;
 }
 ul.list{
 list-style-type: none;

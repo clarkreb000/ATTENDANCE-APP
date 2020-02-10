@@ -1,10 +1,10 @@
 *{margin: 0; padding:0}
 body{
-background: linear-gradient(to bottom left, #00004d 0%, #669999 100%);
+background: linear-gradient(to bottom left, #0d0d0d 0%, #8c8c8c 100%);
 padding-top: 10vh;
 }
 h2{
-background-color:#f1e0da;
+background-color:#DCDCDC;
 padding: 30px 20px;
 margin: 0px -50px;
 text-align:center;
@@ -23,7 +23,7 @@ height: 500px;
 margin:50px auto;
 }
 div.main{
-background-color:#FFF5F5;
+background-color:#cccccc;
 width: 300px;
 padding: 0px 50px 25px;
 border: 2px solid gray;
@@ -38,7 +38,7 @@ padding: 10px;
 margin-bottom: 25px;
 margin-top: 10px;
 border: 2px solid #ccc;
-color: #4f4f4f;
+color:#000000;
 font-size: 16px;
 border-radius: 5px;
 }
@@ -61,7 +61,7 @@ color: black;
 }
 input[type=button]{
 font-size: 16px;
-background: linear-gradient(#b6e1fc 5%, #85cdfa 100%);
+background: linear-gradient(#ffe44d 5%, #ffd700 100%);
 border: 1px;
 color: #4E4D4B;
 font-weight: bold;
@@ -72,5 +72,5 @@ padding: 10px 0;
 outline:none;
 }
 input[type=button]:hover{
-background: linear-gradient(#85cdfa 5%, #b6e1fc 100%);
+background: linear-gradient(#ffd700 5%, #ffe44d 100%);
 }
