@@ -23,7 +23,7 @@ function writeUserData(username, name, teacher, password){
         alert("put something in you big fat white nasty smellin b")
     }
     else {
-        alert("nice")
+        alert("oof")
         var data = {
             name: name,
             password: password,
