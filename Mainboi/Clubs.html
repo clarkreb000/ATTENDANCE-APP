@@ -1,0 +1,55 @@
+<html>
+<head>
+    <link rel="stylesheet" href="no.css"/>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+    <script src="firebaseStuff.js"></script>
+    <script>
+        initializeFirebase();
+    </script>
+    <title>Clubs</title>
+</head>
+<style>
+    #table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    #table td, #table th {
+        border: 2px solid #ddd;
+        padding: 8px;
+    }
+    #table tr:nth-child(odd){background-color: #f2f2f2;}
+    #table tr:nth-child(even){background-color: #e8e8e8;}
+    #table tr:hover {background-color: #ddd;}
+    #table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #b6e1fc;
+        color: black;
+    }
+</style>
+<input type="button" value="MAKE THE BROTHER TRUCKING TABLE" id="submit" onclick="makeTable()"/>
+<table id="TABLE"></table>
+<body>
+    <script>
+        var table = document.getElementById("TABLE");
+        document.body.appendChild(table);
+        var rows = 0;
+        refClubs.once('value', function (snapshot){
+            snapshot.forEach(function(childSnapshot){
+                if(cell1.innerText = childSnapshot.child("name").val() = "My club isn't listed! I need to add another")
+                var row = table.insertRow(rows);
+                var cell0 = row.insertCell(0)
+                var cell1 = row.insertCell(1);
+                var cell2 = row.insertCell(2);
+                cell0.innerHTML = document.createElement("INPUT");
+                cell1.innerText = childSnapshot.child("name").val();
+                cell2.innerText = childSnapshot.child("proctors").val();
+            })
+        });
+
+    </script>
+</body>
+</html>
