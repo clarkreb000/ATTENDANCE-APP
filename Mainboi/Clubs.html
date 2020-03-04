@@ -39,14 +39,20 @@
         var rows = 0;
         refClubs.once('value', function (snapshot){
             snapshot.forEach(function(childSnapshot){
-                if(cell1.innerText = childSnapshot.child("name").val() = "My club isn't listed! I need to add another")
-                var row = table.insertRow(rows);
-                var cell0 = row.insertCell(0)
-                var cell1 = row.insertCell(1);
-                var cell2 = row.insertCell(2);
-                cell0.innerHTML = document.createElement("INPUT");
-                cell1.innerText = childSnapshot.child("name").val();
-                cell2.innerText = childSnapshot.child("proctors").val();
+                if(childSnapshot.child("name").val() == "My club isn't listed! I need to add another"){
+                    var row = table.insertRow(rows);
+                    var cell0 = row.insertCell(0)
+                    var cell1 = row.insertCell(1);
+                    cell0.innerText = childSnapshot.child("name").val();
+                    cell1.innerText = childSnapshot.child("proctors").val();
+                }
+                else{
+                    var row = table.insertRow(rows);
+                    var cell0 = row.insertCell(0)
+                    var cell1 = row.insertCell(1);
+                    cell0.innerText = childSnapshot.child("name").val();
+                    cell1.innerText = childSnapshot.child("proctors").val();
+                }
             })
         });
 

@@ -18,7 +18,7 @@ function initializeFirebase(){
     refClubs = database.ref('clubs');
 }
 
-function writeUserData(username, name, teacher, password, clubs){
+function writeUserData(username, name, teacher, password){
     if(username == "" || name == "" || password == ""){
         alert("put something in you big fat white nasty smellin b")
     }
@@ -34,10 +34,7 @@ function writeUserData(username, name, teacher, password, clubs){
             clockInSecond: new Date().getSeconds(),
             totalTime: 0
         };
-        if(data.role == "teacher"){
-            refUsers.push(data);
-        }
-
+        refUsers.push(data);
         user = data;
     }
     alert('moving on');
